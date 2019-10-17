@@ -1,6 +1,8 @@
 Core is a lightweight wrapper of sql.DB.
 
 [![CircleCI](https://circleci.com/gh/xormsharp/core/tree/master.svg?style=svg)](https://circleci.com/gh/xormsharp/core/tree/master)
+[![](http://gocover.io/_badge/github.com/xormsharp/core)](http://gocover.io/github.com/xormsharp/core)
+[![Go Report Card](https://goreportcard.com/badge/github.com/xormsharp/core)](https://goreportcard.com/report/github.com/xormsharp/core)
 
 # Open
 ```Go

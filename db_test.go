@@ -15,16 +15,6 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-type User struct {
-	Id       int64
-	Name     string
-	Title    string
-	Age      float32
-	Alias    string
-	NickName string
-	Created  NullTime
-}
-
 var (
 	dbtype         = flag.String("dbtype", "mysql", "database type")
 	dbConn         = flag.String("dbConn", "root:@/core_test?charset=utf8", "database connect string")
@@ -106,7 +96,15 @@ func BenchmarkOriQuery(b *testing.B) {
 	}
 }
 
-
+type User struct {
+	Id       int64
+	Name     string
+	Title    string
+	Age      float32
+	Alias    string
+	NickName string
+	Created  NullTime
+}
 
 func BenchmarkStructQuery(b *testing.B) {
 	b.StopTimer()
